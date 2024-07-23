@@ -1,4 +1,4 @@
-package com.ilog.lib.common.model;
+package com.ilog.lib.model;
 
 
 import lombok.Data;
