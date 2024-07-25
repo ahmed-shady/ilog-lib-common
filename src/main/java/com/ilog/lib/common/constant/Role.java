@@ -1,4 +1,4 @@
-package com.ilog.lib.constant;
+package com.ilog.lib.common.constant;
 
 import lombok.Getter;
 

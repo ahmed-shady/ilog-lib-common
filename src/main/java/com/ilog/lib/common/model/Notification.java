@@ -1,7 +1,7 @@
-package com.ilog.lib.model;
+package com.ilog.lib.common.model;
 
 
-import com.ilog.lib.constant.Role;
+import com.ilog.lib.common.constant.Role;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 import lombok.NoArgsConstructor;
