@@ -6,7 +6,7 @@
 
   <groupId>com.ilog.lib</groupId>
   <artifactId>common</artifactId>
-  <version>0.0.8</version>
+  <version>0.0.9</version>
   <name>ilog-lib-common</name>
   <description>Common Library for ilog microservices</description>
   <packaging>jar</packaging>
