@@ -10,7 +10,7 @@ import java.util.List;
 
 @NoArgsConstructor
 @Data
-public class Notification {
+public class KafkaNotification {
 
     private List<String> tokens;
     private boolean admin;
