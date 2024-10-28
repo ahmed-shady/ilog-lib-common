@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -16,9 +17,15 @@ import java.util.List;
 @AllArgsConstructor
 public class KafkaNotification {
 
-    private List<String> tokens;
-    private boolean admin;
-    private List<Long> userIds;
+    @Builder.Default
+    private List<String> tokens = new ArrayList<>();
+
+    @Builder.Default
+    private boolean admin = false;
+
+    @Builder.Default
+    private List<Long> userIds = new ArrayList<>();
+
     private String title;
     private String body;
     private Object payload;
