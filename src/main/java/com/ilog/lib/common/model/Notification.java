@@ -1,33 +1,23 @@
 package com.ilog.lib.common.model;
 
 
-import com.ilog.lib.common.constant.Role;
-import jakarta.validation.constraints.NotBlank;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
+import java.util.List;
 
 
 @NoArgsConstructor
 @Data
 public class Notification {
 
-    private Long id;
+    private List<String> tokens;
+    private boolean admin;
+    private List<Long> userIds;
+    String title;
+    String body;
+    Object payload;
 
-    String message;
-
-    UserDto user; //optional. Contains: id, name, email, profileImage
-
-    @NotBlank(message = "category is missing")
-    String category;
-
-    Role recipientRole;
-
-    Long recipientId;
-
-    LocalDateTime createdAt;
-
-    Boolean read = false;
 
 }
