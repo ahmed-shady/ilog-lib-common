@@ -42,4 +42,6 @@ public class KafkaNewsFeed extends KafkaBaseMessage {
 
     private Long updatedById;
 
+    private String header;
+
 }
